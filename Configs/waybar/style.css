@@ -1,0 +1,85 @@
+* {
+font-family: Symbols Nerd Font, whiterabbit;
+font-size: 22px;
+}
+
+window#waybar {
+    background-color: rgba(75, 75, 85, 0.05);
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: inset -3px -3px 1px rgba(0, 0, 0, 0.3), inset 2px 2px 1px rgba(255, 255, 255, 0.3);
+}
+
+#pulseaudio:hover {
+background-color: rgba(0, 0, 0, 0.4);
+}
+
+#network:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#workspaces button {
+    box-shadow: inset -2px -2px 1px rgba(0, 0, 0, 0.5), inset 1px 1px 1px rgba(255, 255, 255, 0.5);
+    margin: 6px 2px;
+    padding: 4px 12px;
+    background-color: rgba(135, 145, 135, 0.5);
+    border: none;
+    color: rgba(215, 215, 215, 1);
+    text-shadow: 1px 1px 3px black;
+    border-radius: 12px;
+}
+
+#workspaces button.empty {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#workspaces button.active {
+    color: white;
+    text-shadow: 1px 1px 3px black, 0px 0px 5px white;
+}
+
+#workspaces button:hover {
+border: none;
+background-color: rgba(155, 155, 155, 0.1);
+}
+
+#clock,
+#cpu,
+#memory,
+#disk,
+#network,
+#workspaces,
+#pulseaudio,
+#tray {
+padding: 8px 8px;
+background-color: rgba(155, 165, 155, 0.1);
+margin: 6px 4px;
+border-radius: 12px;
+color: #ffffff;
+box-shadow: inset -2px -2px 1px rgba(0, 0, 0, 0.5), inset 1px 1px 1px rgba(255, 255, 255, 0.5);
+text-shadow: 1px 1px 3px black, 0px 0px 5px white;
+}
+
+#workspaces {
+    padding: 0px 0px;
+    margin: 0px 4px;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 8px;
+}
+
+.modules-right > widget:last-child > #tray {
+    margin-right: 8px;
+}
+
+.modules-right > widget:last-child > #memory {
+    margin-right: 8px;
+}
+
+#network.disconnected {
+background-color: #f53c3c;
+}
