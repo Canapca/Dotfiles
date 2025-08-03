@@ -4,10 +4,10 @@ font-size: 22px;
 }
 
 window#waybar {
-    background-color: rgba(75, 75, 85, 0.05);
+    background-color: rgba(10, 10, 10, 0.5);
     color: #ffffff;
     border-radius: 12px;
-    box-shadow: inset -3px -3px 1px rgba(0, 0, 0, 0.3), inset 2px 2px 1px rgba(255, 255, 255, 0.3);
+    box-shadow: inset -3px -3px 2px rgba(0, 0, 0, 0.3), inset 2px 2px 2px rgba(255, 255, 255, 0.3);
 }
 
 #pulseaudio:hover {
@@ -19,24 +19,25 @@ background-color: rgba(0, 0, 0, 0.4);
 }
 
 #workspaces button {
-    box-shadow: inset -2px -2px 1px rgba(0, 0, 0, 0.5), inset 1px 1px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.5);
     margin: 6px 2px;
     padding: 4px 12px;
-    background-color: rgba(135, 145, 135, 0.5);
+    background-color: rgba(135, 145, 135, 0.2);
     border: none;
-    color: rgba(215, 215, 215, 1);
-    text-shadow: 1px 1px 3px black;
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 3px black, 0px 0px 5px white, 0px 0px 10px white;
     border-radius: 12px;
 }
 
 #workspaces button.empty {
     background-color: rgba(0, 0, 0, 0.2);
     color: rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 3px black;
 }
 
 #workspaces button.active {
-    color: white;
-    text-shadow: 1px 1px 3px black, 0px 0px 5px white;
+    color: rgba(255, 255, 255, 1.0);
+    text-shadow: 0px 0px 5px black, 0px 0px 3px blue, 0px 0px 2px cyan;
 }
 
 #workspaces button:hover {
@@ -57,7 +58,7 @@ background-color: rgba(155, 165, 155, 0.1);
 margin: 6px 4px;
 border-radius: 12px;
 color: #ffffff;
-box-shadow: inset -2px -2px 1px rgba(0, 0, 0, 0.5), inset 1px 1px 1px rgba(255, 255, 255, 0.5);
+box-shadow: inset -2px -2px 2px rgba(0, 0, 0, 0.5), inset 1px 1px 2px rgba(255, 255, 255, 0.5);
 text-shadow: 1px 1px 3px black, 0px 0px 5px white;
 }
 
