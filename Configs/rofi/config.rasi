@@ -1,0 +1,33 @@
+configuration {
+	font: "whiterabbit 16";
+	show-icons: false;
+	otimeout {
+		action: "kb-cancel";
+		delay:  0;
+	}
+	filebrowser {
+		directories-first: true;
+		sorting-method:    "name";
+	}
+}
+@theme "gruvbox-dark"
+listview {
+	border-color: rgba(155, 155, 155, 0.8);
+	scrollbar: false;
+}
+window {
+	border: 2px;
+	border-color: rgba(155, 155, 155, 0.8);
+	border-radius: 10px;
+	width: 600px;
+	height: 450px;
+}
+entry, element-text, prompt, textbox-prompt-sep {
+	color: rgba(155, 255, 255, 1.0);
+}
+element normal.normal, element alternate.normal {
+	background-color: rgba(55, 55, 55, 0.6);
+}
+element selected.normal {
+	background-color: rgba(55, 75, 75, 0.9);
+}
